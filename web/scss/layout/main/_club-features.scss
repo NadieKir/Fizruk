@@ -1,0 +1,43 @@
+.club-features {
+    height: 170px;
+    background-color: $black;
+    @include flex-row(0, center, center);
+
+    .container {
+        @include flex-row(0, space-between);
+    }
+    
+    .feature {
+        border-left: 5px solid;
+        border-image-source: $green;
+        border-image-slice: 1;
+
+        padding-left: 22px;
+
+        @include flex-column(15px);
+
+        h3 {
+            font-size: 23px;
+            text-transform: uppercase;
+            @include text-white();
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            @include text-white();
+        }
+    }
+
+    #feature-1 {
+        width: 317px;
+    }
+    #feature-2 {
+        width: 345px;
+    }
+    #feature-3 {
+        width: 324px;
+    }
+}

@@ -1,0 +1,16 @@
+.socials {
+    .social {
+        height: 38px;
+        width: 38px;
+        border: 2px solid;
+        border-image-source: $green;
+        border-image-slice: 1;
+        cursor: pointer;
+
+        @include flex-row(0, center, center);
+
+        img {
+            width: 19px;
+        }
+    }
+}

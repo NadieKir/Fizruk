@@ -1,0 +1,72 @@
+.services-preview {
+    margin: 90px 0 60px 0;
+
+    .services-preview-wrapper {
+        @include flex-column(36px);
+
+        .services-preview-wrapper-row:first-child .service-preview {
+            width: 600px;
+            height: 360px;
+        }
+
+        .services-preview-wrapper-row:last-child .service-preview {
+            width: 390px;
+            height: 260px;
+        }
+
+        .services-preview-wrapper-row {
+            @include flex-row(0, space-between);
+
+            .service-preview {
+                @include border-color($colorful);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                cursor: pointer;
+
+                &:hover .arrow-btn-action::after{
+                    right: -70px;
+                }
+
+                &:hover img {
+                    transform: scale(1.05);
+                    filter: brightness(70%);
+                }
+
+                img {
+                    width: 100%;
+                    transition: 0.7s;
+                }
+
+                overflow: hidden;
+                position: relative;
+
+
+                .service-name-btn-wrapper {
+                    background: rgba(0, 0, 0, 0.6);
+                    height: 90px;
+                    padding: 0 35px;
+
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+
+                    @include flex-column(8px);
+                    justify-content: center;
+                    
+                    .service-name {
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        @include text-white();
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+}

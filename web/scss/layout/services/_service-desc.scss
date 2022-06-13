@@ -1,0 +1,112 @@
+.service-desc {
+    flex-grow: 1;
+    @include flex-row();
+
+    .service-info-wrapper {
+        padding: 0 75px 0 150px;
+        background-color: $black;
+        height: 100%;
+        width: 70%;
+        @include flex-row(0px, flex-start, center);
+
+        .service-infos {
+            @include flex-row(50px);
+
+            .service-header-arrow {
+                align-self: stretch;
+                width: 4px;
+                background: $green;
+
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 4px;
+                    width: 25px;
+                    background: $green;
+                    bottom: -5px;
+                    transform: rotate(225deg);
+                    transform-origin: 0 50%;
+                    left: 4px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 4px;
+                    width: 25px;
+                    background: $green;
+                    bottom: -5px;
+                    transform: rotate(-45deg);
+                    transform-origin: 0 50%;
+                    left: 1px;
+                }
+            }
+    
+            .service-info {
+                @include flex-column();
+                width: 85%;
+    
+                &-desc {
+                    @include flex-column(10px);
+                        
+                    font-family: $secondary-font;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+    
+                    @include text-white();
+                }
+            }
+        }
+    }
+
+    .subservices-wrapper {
+        padding: 0 150px 0 100px;
+        width: 30%;
+        height: 100%;
+        @include flex-row(0, flex-start, center);
+        box-shadow:0 0 0 608px rgba(0, 0, 0, 0.33) inset;
+
+        .subservices {
+            @include flex-column(20px);
+            color: $white;
+
+            font-size: 18px;
+            text-transform: uppercase;
+
+            a.subservice {
+                cursor: pointer;
+                display: inline-block;
+                color: $white;
+                position: relative;
+
+                &:hover {
+                    @include text-green();
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 13px;
+                        width: 65px;
+                        top: 5px;
+                        background-image: url('../img/arrow.svg');
+                        background-size: 90px 13px;
+                        transform: scale(1.6);
+                    }
+                }
+            }
+
+            a.subservice.isGym {
+                &:hover {
+                    &::after {
+                        right: -20px;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBFBFB;
+    box-sizing: border-box;
+    font-family: $main-font;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+} 
+
+.container {
+    width: 1235px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.first-section-wrapper {
+    height: 100vh;
+    @include flex-column();
+}
+
+.green {
+    @include text-green();
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.small {
+    font-size: 0.7em;
+}

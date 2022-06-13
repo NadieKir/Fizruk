@@ -1,0 +1,21 @@
+.sort-promos-section {
+    .container {
+        @include flex-row(40px);
+        margin-top: 60px;
+
+        .sort-btn {
+            font-family: 'Druk Text Wide Cyr';
+            font-weight: 500;
+            font-size: 14px;
+            @include text-black();
+            text-transform: uppercase;
+
+            cursor: pointer;
+            transition: 0.4s;
+
+            &.active, &:hover {
+                @include text-green();
+            }
+        }
+    }
+}

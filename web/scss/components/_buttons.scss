@@ -1,0 +1,133 @@
+.green-btn {
+    display: inline-block;
+    padding: 18px 38px;
+    
+    background-image: linear-gradient(to right, #3be211, #15D028, #3be211, #15D028);
+    
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    border: none;
+    transition: 0.8s ease-in-out;
+    background-size: 300% 100%;
+
+    span {
+        @include text-white();
+    }
+
+    &:hover {
+        background-position: 100% 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.green-modal-btn {
+    display: inline-block;
+    padding: 18px 38px;
+    
+    background-image: linear-gradient(to right, #3be211, #15D028, #3be211, #15D028);
+    
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    border: none;
+    transition: 0.8s ease-in-out;
+    background-size: 300% 100%;
+
+    color: $white;
+    margin-top: 12px;
+
+
+    &:hover {
+        background-position: 100% 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+a.arrow-btn {
+    .arrow-btn-action {
+        font-size: 12px;
+        text-transform: uppercase;
+        @include text-green();
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 13px;
+            width: 65px;
+            right: -50px;
+            top: 2px;
+            background-image: url('../img/arrow.svg');
+            background-size: 90px 13px;
+            transition: 0.3s;
+        }
+
+        &:hover::after {
+            right: -70px;
+        }
+    }
+}
+
+span.arrow-btn {
+    .arrow-btn-action {
+        font-size: 12px;
+        text-transform: uppercase;
+        @include text-green();
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 13px;
+            width: 65px;
+            right: -50px;
+            top: 2px;
+            background-image: url('../img/arrow.svg');
+            background-size: 90px 13px;
+            transition: 0.3s;
+        }
+
+        &:hover::after {
+            right: -70px;
+        }
+    }
+}
+
+button.arrow-btn {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    background: transparent;
+    text-transform: uppercase;
+    @include text-green();
+    border: none;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 13px;
+        width: 65px;
+        right: -50px;
+        top: 0px;
+        background-image: url('../img/arrow.svg');
+        background-size: 90px 13px;
+        transition: 0.3s;
+    }
+
+    &:hover::after {
+        right: -70px;
+    }
+}

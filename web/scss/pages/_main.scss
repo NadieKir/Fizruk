@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBFBFB;
+    box-sizing: border-box;
+    font-family: $main-font;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+} 
+
+.container {
+    width: 1235px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0;
+}
+
+.first-screen-wrapper {
+    @include flex-column();
+    height: 100vh;
+}
+
+.green {
+    @include text-green();
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* --- RESPONSIVE --- */
+
+// @media screen and (max-width: 1200px) {
+//     .container {
+//         width: 960px;
+//     }
+// }
+
+// @media screen and (max-width: 992px) {
+//     .container {
+//         width: 720px;
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .container {
+//         width: 540px;
+//     }
+// }
+
+// @media screen and (max-width: 576px) {
+//     .container {
+//         width: 90%;
+//     }
+// }

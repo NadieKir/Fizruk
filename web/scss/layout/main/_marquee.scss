@@ -1,0 +1,39 @@
+.club-benefits {
+    // height: 85px;
+    padding: 30px 0;
+    background: $colorful;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+
+    .marquee {
+        overflow: hidden;
+
+        .club-benefit {
+            display: inline-block;
+            margin-right: 110px;
+    
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $black;
+        }
+    
+        #club-benefit-1 {
+            width: 240px;
+        }
+    
+        #club-benefit-2 {
+            width: 260px;
+        }
+    
+        #club-benefit-3 {
+            width: 280px;
+        }
+    
+        #club-benefit-4 {
+            width: 290px;
+        }
+    }
+}

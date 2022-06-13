@@ -1,0 +1,25 @@
+.sort-block {
+    @include flex-row(60px, flex-start, center);
+
+    margin-bottom: 50px;
+    padding-top: 10px;
+    text-transform: uppercase;
+
+    h5 {
+        font-size: 13px;
+    }
+
+    .sort-options {
+        @include flex-row(25px);
+
+        span {
+            font-size: 13px;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &.active, &:hover {
+                @include text-green();
+            }
+        }
+    }
+}

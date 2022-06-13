@@ -1,0 +1,48 @@
+.user-info-section {
+    background: $black;
+    padding: 55px 0;
+    @include border-bottom-colorful();
+
+    .container {
+        @include flex-row(0, space-between, center);
+
+        .user-info-wrapper {
+            @include flex-row(40px, flex-start, center);
+
+            img {
+                @include border-color($colorful, 3px);
+            }
+
+            .user-info {
+                @include flex-column(15px);
+                font-size: 13px;
+                text-transform: uppercase;
+                @include text-white();
+
+                .user-data {
+                    @include text-white();
+                }
+
+                .user-name {
+                    margin-bottom: 20px;
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+        .manage-profile-wrapper {
+            @include flex-column(20px);
+            width: 19%;
+
+            .btns-wrapper {
+                @include flex-column(10px);
+
+                .green-btn {
+                    color: $white;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,180 @@
+/* MAIN FORM */
+
+.main-section {
+    margin: 70px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-form {
+        @include border-color($colorful);
+        padding: 22px;
+        width: 519px;
+
+        a {
+            text-decoration: none;
+            transition: .5s;
+            color: $black;
+
+            &:hover {
+                @include text-green();
+            }
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        input {
+            display: block;
+            width: 100%;
+            outline: none;
+        }
+        
+        .tab-form {
+            background-color: $white;
+            display: none;
+            padding: 40px;
+ 
+            &.active{ 
+                @include flex-column(25px);
+            }
+        }
+        
+  
+        label.tab {
+            color: $white;
+            font-weight: 500;
+            padding: 20px 31px;
+            display: inline-block;
+            margin-bottom: -1px;
+            cursor: pointer;
+            font-size: 15px;
+
+            &.active {
+                background-color: $white;
+                color: $black;
+            }
+
+            &::before {
+                content: '\f090';
+                font-family: 'FontAwesome', sans-serif;
+                font-size: 24px;
+                margin-right: 11px;
+                font-weight: normal;
+            }
+            
+            &.registration::before {
+                content: '\f234';
+            }
+        }
+          
+        input {
+            font-size: 16px;
+            border: 2px solid #e9eaea;
+            padding: 12px 14px;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            outline: none;
+            font-family: $secondary-font;
+        }
+
+        .help-block {
+            font-size: 12px;
+            color: #a62020;
+        }
+        
+        .box-input>.input~label {
+            color: #7e7e7e;
+        }
+        
+        .error {
+            display: block;
+            font-size: 11px;
+            color: #b52525;
+            margin-bottom: 20px;
+        }
+        
+        
+        /* Плавающий текст */
+
+        .box-input {
+            position: relative;
+
+            input {
+                border: none;
+                border-bottom: 2px solid $black;
+                padding: 5px 0;
+                background-color: transparent;
+            }
+            
+            label {
+                pointer-events: none;
+                font-size: 13px;
+                color: $black;
+            }
+        }
+        
+        /* Капча */
+        
+        .captcha {
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+        }
+        
+        .captcha-img-btn {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+        
+        .captcha__refresh-btn {
+            font-size: 11px;
+            font-family: Nunito;
+            cursor: pointer;
+        }
+        
+        .captcha .box-input {
+            width: 100%;
+        }
+        
+        /* Эффект кнопки */
+        
+        .button {
+            border: none;
+            background: $black;
+            color: $white;
+            font-family: $main-font;
+            font-size: 14px;
+            font-weight: 500;
+        
+            line-height: 50px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            width: 100%;
+        
+            @include border-bottom-colorful();
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #202020;
+            }
+        }
+    }
+ 
+    
+    .del {
+        display: none;
+    }
+    
+    .hidden {
+        visibility: hidden;
+    }
+
+}
+   

@@ -1,0 +1,72 @@
+.timetable-section {
+    background: url('../img/timetable-background.png');
+    padding: 100px 0;
+
+    .container {
+        @include border-left-color($green, 3px);
+        padding-left: 50px;
+
+        @include flex-column(50px);
+
+        .timetable-row {
+            @include flex-row(22px);
+            row-gap: 20px;
+            flex-wrap: wrap;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -66px;
+                width: 31px;
+                height: 31px;
+                background: $green;
+            }
+
+            .one-timetable {
+                @include border-color($green, 3px);
+                padding: 30px;
+                @include flex-column(22px);
+                background: $black;
+                width: 32%;
+                
+                .time-place-wrapper {
+                    @include flex-row(0, space-between);
+                    .time, .place {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        @include text-white();
+                    }
+                }
+
+                .name-trainer-wrapper {
+                    @include flex-column(8px);
+
+                    .service-name {
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        @include text-green();
+                    }
+
+                    .service-trainer {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        @include text-white();
+                    }
+
+                }
+
+                .button-capacity-wrapper {
+                    @include flex-row(0, space-between,center);
+
+                    .capacity {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        @include text-white();
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,91 @@
+.footer {
+    background-color: $black;
+
+    .main-footer {
+        @include flex-row(0, space-between, center);
+        padding: 60px 0;
+
+        .nav-social-wrapper {
+            @include flex-row(100px);
+
+            .footer-nav-contacts-wrapper {
+                @include flex-row(80px);
+
+                h6 {
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    @include text-white();
+                    position: relative;
+                    padding-bottom: 40px;
+
+                    &::before {
+                        content: '';
+                        height: 2px;
+                        background: $green;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 25px;
+                    }
+                }
+
+                .footer-info-links {
+                    @include flex-column(19px);
+
+                    a {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        @include text-white();
+
+                        &:hover {
+                            @include text-green();
+                        }
+                    }
+
+                    .contact {
+                        @include flex-column(8px);
+
+                        span {
+                            font-size: 10px;
+                            text-transform: uppercase;
+                            @include text-white();
+                        }
+
+                        p {
+                            font-family: $secondary-font;
+                            font-weight: 500;
+                            font-size: 11px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .socials {
+                @include flex-column(15px);
+
+                .social {
+                    transition: 0.3s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .line {
+        background-color: #28342b;
+        height: 1px;
+        width: 100%;
+    }
+
+    .copyright-info {
+        @include flex-row(0, space-between, center);
+        padding: 20px 0;
+
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 10px;
+        color: $white;
+    }
+}

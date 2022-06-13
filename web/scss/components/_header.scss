@@ -1,0 +1,87 @@
+.header {
+    @include border-bottom-colorful();
+    @include flex-row(0, center, center);
+
+    height: 100px;
+    background-color: $black;
+
+    .container {
+        @include flex-row(0, space-between, center);
+
+        .main-nav {
+            @include flex-row(40px);
+
+                overflow: hidden;
+                
+                a {
+                    overflow: hidden;
+                    padding: -1px;
+                    height: 1.3em;
+                    
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    
+                    span {
+                        @include text-white();
+                        position: relative;
+                        display: inline-block;
+                        transition: 0.2s;
+                        &::before {
+                            @include text-green();
+                            position: absolute;
+                            top: 100%;
+                            content: attr(data-hover);
+                            font-weight: 500;
+                            transform: translate3d(0,0,0);
+                        }
+                    }
+
+                    &:hover{
+                        span{
+                            transform: translateY(-100%);
+                        }
+                    }
+
+                    &.active {
+                        span {
+                           @include text-green(); 
+
+                           &:hover{   
+                                transform: translateY(0);
+
+                            }
+                        }
+                    }
+                }
+        
+        }
+
+        .account {
+            @include flex-row(18px, flex-start, center);
+
+            .user-name {
+                @include text-green();
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            a {
+                font-size: 0;
+            }
+
+            form {
+                font-size: 0;
+
+                .logout-btn {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 0;
+                    padding: 0;
+                }
+            }
+
+        }
+    }
+}
+

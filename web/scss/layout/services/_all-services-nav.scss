@@ -1,0 +1,22 @@
+.all-services-nav {
+    background-color: $black;
+    padding: 40px 0;
+    @include border-bottom-colorful();
+
+    .container {
+        @include flex-row(0, space-between, center);
+        @include text-white();
+
+        .service-nav {
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &.active,  
+            &:hover {
+                @include text-green();
+            }
+
+        }
+    }
+}

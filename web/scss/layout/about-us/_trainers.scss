@@ -1,0 +1,83 @@
+.trainers-section {
+    padding-bottom: 80px;
+
+    .trainers-slider {
+        .trainer {
+            @include border-color($green);
+            width: 310px;
+            height: 415px;
+            @include flex-row(0, flex-start, flex-end);
+            overflow: hidden;
+            position: relative;
+
+            .trainer-desc {
+                background: rgba(22, 24, 22, 0.9);
+                padding: 25px;
+                width: 100%;
+                @include flex-column(26px);
+                transition: 0.4s;
+
+                .trainer-main-info {
+                    @include flex-column(6px);
+
+                    .trainer-name {
+                        font-size: 14px;
+                        @include text-white();
+                        text-transform: uppercase;
+                    }
+
+                    .trainer-service {
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        @include text-green();
+                        color: $green;
+                    }
+                    
+                }
+
+                .trainer-facts-wrapper {
+                    @include flex-column(14px);
+
+                    .trainer-fact {
+                        @include flex-column(6px);
+                        font-size: 12px;
+                        @include text-white();
+
+                    }
+
+                }
+            }
+
+            .trainer-like, .trainer-comment {
+                @include flex-column(8px, center, center);
+                position: absolute;
+
+                img {
+                    cursor: pointer;
+                }
+
+                span {
+                    font-size: 14px;
+                    line-height: 18px;
+                    @include text-white();
+                }
+
+                .like-img {
+                    background: none;
+                    border: none;
+                    padding: 0;
+                }
+            }
+
+            .trainer-like {
+                right: 7%;
+                top: 5%;
+            }
+            .trainer-comment {
+                right: 7%;
+                top: 21%;
+            }
+
+        }
+    }
+}

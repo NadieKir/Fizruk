@@ -1,0 +1,48 @@
+.contacts-info-map-wrapper {
+    margin-bottom: 80px;
+    @include flex-row();
+
+    .contacts-map-wrapper {
+        width: 50%;
+        align-self: stretch;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .contacts-info-wrapper {
+        width: 50%;  
+        background: $black;
+        padding: 55px 100px;
+        @include border-left-color($colorful);
+        @include flex-row(0, center, center);
+
+        .contacts-info {
+            @include flex-column(35px);
+            @include text-white();
+
+            .contacts-info-row {
+                &-desc {
+                    font-family: $secondary-font;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+
+                & .socials {
+                    @include flex-row(15px);
+                    margin-top: 20px;
+
+                    .social {
+                        transition: 0.3s;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

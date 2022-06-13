@@ -1,0 +1,100 @@
+.marathon {
+    // height: 500px;
+    margin-bottom: 100px;
+
+    display: flex;
+
+    .marathon-container-1 {
+        padding: 100px 75px 100px 150px;
+        @include flex-row(0, center, center);
+    }
+
+    .marathon-container-2 {
+        padding: 100px 150px 100px 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        align-self: stretch;
+        flex-shrink: 0;
+    }
+
+    .marathon-info-wrapper {
+        width: 790px;
+        background-color: $black;
+
+        .marathon-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+
+            text-transform: uppercase;
+            @include text-white();
+
+            .already-in-participants {
+                width: 330px;
+
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+
+                margin-bottom: 60px;
+            }
+
+            .marathon-place-time {
+                font-size: 13px;
+
+                margin-bottom: 35px;
+            }
+
+            .marathon-desc {
+                font-family: $secondary-font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.005em;
+                text-transform: none;
+
+                margin-bottom: 38px;
+            }
+
+        }
+    }
+
+    .marathon-countdown-wrapper {
+        flex-grow: 1;
+        background: url('../img/marathon-background.png');
+        @include flex-row(0, flex-end, center);
+
+        .marathon-countdown {
+            @include flex-row(15px, flex-end);
+            @include text-white();
+            
+
+            .count-part-wrapper {
+                @include flex-column(10px);
+                align-items: center;
+
+                .number {
+                    font-size: 40px;
+                    @include text-green();
+                }
+
+                .desc {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .colon {
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+
+    }
+}

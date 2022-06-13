@@ -1,0 +1,47 @@
+.club-cards-filter-section {
+    flex-grow: 1;
+    background-color: $black;
+
+    .container {
+        @include flex-column(0, space-between, center);
+        height: 100%;
+
+        .all-club-cards-filters-wrapper {
+            padding-bottom: 80px;
+            @include flex-column(50px, space-between, center);
+            align-self: stretch;
+
+            .all-club-cards-filters {
+                @include flex-row(0, space-between);
+                width: 100%;
+
+                .all-filter-names {
+                    width: 25%;
+                    @include flex-column(30px);
+                }
+
+                .all-filter-options {
+                    width: 70%;
+                    @include flex-column(38px);
+
+                    .filter-options {
+                        @include flex-row(40px);
+                        flex-wrap: wrap;
+                        row-gap: 9px;
+
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        @include text-white();
+
+                        .filter-option {
+                            &.active, &:hover {
+                                @include text-green();
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

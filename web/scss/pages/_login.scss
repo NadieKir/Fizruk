@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $black;
+    box-sizing: border-box;
+    font-family: $main-font;
+    font-weight: 500;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+} 
+
+.container {
+    width: 1235px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.green {
+    @include text-green();
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.small {
+    font-size: 0.7em;
+}
+
+p {
+    margin: 0;
+}
+
+.login-header {
+    @include flex-row(0, center);
+    padding-top: 70px;
+}

@@ -1,0 +1,23 @@
+.selected-cards-section {
+    padding: 90px 0;
+
+    .container {
+        width: 1150px;
+        margin: 0 auto;
+
+        .selected-cards {
+            @include flex-row(0, space-between);
+            flex-wrap: wrap;
+            row-gap: 55px;
+        }
+
+        .pagination-wrapper {
+            @include flex-row(0, center);
+            width: 100%;
+
+            .pagination {
+                margin-top: 10px;
+            }
+        }
+    }
+}

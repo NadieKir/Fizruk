@@ -1,0 +1,9 @@
+.club-photos-section {
+    padding: 80px 0;
+
+    img.item {
+        @include border-color($colorful);
+        // width: 400px;
+        height: 330px;
+    }
+}

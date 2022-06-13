@@ -1,0 +1,71 @@
+.club-cards {
+    margin-bottom: 95px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .club-cards-wrapper {
+        @include flex-row(0, space-between, center);
+        margin-top: 10px;
+
+        .club-card {
+
+            @include flex-column(0, center, center);
+
+            &-headings {
+                @include flex-column(10px, center, center);
+                margin-bottom: 40px;
+            }
+
+            &-short-name {
+                font-size: 12px;
+                margin-bottom: 28px;
+            }
+
+            &-included {
+                @include flex-column(10px);
+
+                padding-left: 20px;
+                font-family: $secondary-font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 18px;
+
+                margin-bottom: 40px;
+                align-self: flex-start;
+                @include border-left-color($green, 3px);
+            }
+
+            &-price {
+                font-size: 18px;
+            }
+
+            width: 385px;
+            height: 510px;
+            padding: 0px 35px;
+            @include text-black();
+            @include border-color($green);
+            background-color: $white; 
+            transform: scale(0.9);
+
+            &:nth-child(2n) {
+                color: $white;
+                @include border-color($colorful);
+                background-color: $black;
+                transform: scale(1);
+            }
+
+        }
+    }
+
+    .arrow-btn {
+        transform: scale(1.5);
+        align-self: flex-end;
+        margin-top: 60px;
+        margin-right: 120px;
+        cursor: pointer;
+    }
+}

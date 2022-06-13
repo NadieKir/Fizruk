@@ -1,0 +1,37 @@
+.all-subservices {
+    margin: 100px 0;
+
+    .container {
+        @include flex-column(90px);
+
+        .subservice-desc {
+            @include flex-row(0, space-between, center);
+            
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+
+            .subservice-full-desc {
+                width: 55%;
+                @include flex-column(30px);
+
+                &-info {
+                    font-family: $secondary-font;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: $black;
+                }
+
+                .green {
+                    font-size: 22px;
+                }
+            }
+
+            .subservice-image {
+                width: 35%;
+                align-self: stretch;
+            }
+        }
+    }
+}

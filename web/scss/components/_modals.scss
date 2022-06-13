@@ -1,0 +1,180 @@
+// marathon
+
+#marathonModal {
+    .hystmodal__window {
+        width: 40%;
+        padding: 70px 90px;
+        background: $black;
+        @include border-color($colorful);
+        box-sizing: border-box;
+    }
+
+    #marathonModalEnroll {
+        @include flex-column(50px);
+
+        .enroll-wrapper {
+            @include flex-column(14px);
+
+            .enroll-modal-heading {
+                font-size: 22px;
+                text-transform: uppercase;
+                @include text-white();
+            }
+
+            .enroll-date-time {
+                font-size: 14px;
+                text-transform: uppercase;
+                @include text-white();
+            }
+
+            .name-heading, .phone-heading {
+                font-size: 16px;
+                text-transform: uppercase;
+                @include text-white();
+            }
+        }
+    }
+
+    #marathonModalSuccess {
+        @include flex-column(50px);
+
+        .enroll-wrapper {
+            @include flex-column(14px, center, center)
+        }
+
+        .enroll-modal-heading {
+            font-size: 22px;
+            text-transform: uppercase;
+            @include text-white();
+        }
+
+        .enroll-warning {
+            @include flex-row(30px, flex-start, center);
+
+            p {
+                font-family: $secondary-font;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 140%;
+                text-transform: uppercase;
+                @include text-white();
+            }
+        }
+
+        .registration-number {
+            font-size: 50px;
+            text-transform: uppercase;
+            @include text-green();
+        }
+
+        .marathon-modal-desc {
+            font-size: 12px;
+            text-transform: uppercase;
+            @include text-white();
+        }
+    }
+}
+
+// enroll and cancel training and marathon
+
+#enrollTrainingModal, #cancelTrainingModal, #cancelMarathonModal {
+    .hystmodal__window {
+        width: 40%;
+        padding: 70px 90px;
+    
+        background: $black;
+        @include border-color($colorful);
+        box-sizing: border-box;
+    
+        @include flex-column(40px);
+
+        .modal-heading {
+            font-size: 22px;
+            text-transform: uppercase;
+            @include text-white();
+        }
+
+        .modal-info {
+            @include flex-column(15px);
+
+            p {
+                font-size: 14px;
+                text-transform: uppercase;
+                @include text-green();
+
+                span {
+                    @include text-white();
+                }
+            }
+        }
+
+        .green-modal-btn {
+            margin-top: 0;
+            width: fill-available;
+        }
+    }
+}
+
+// change phone and password
+
+#changePhoneModal, #changePasswordModal {
+    .hystmodal__window {
+        width: 48%;
+        padding: 70px 90px;
+    
+        background: $black;
+        @include border-color($colorful);
+        box-sizing: border-box;
+    
+        @include flex-column(40px);
+
+        .modal-heading {
+            font-size: 22px;
+            text-transform: uppercase;
+            @include text-white();
+        }
+
+        form {
+            @include flex-column(20px);
+        }
+
+        .form-group {
+            @include flex-column(15px);
+
+            label {
+                font-size: 14px;
+                @include text-white();
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                font-size: 16px;
+                padding: 10px 12px;
+                box-sizing: border-box;
+                outline: none;
+                font-family: $secondary-font;
+            }
+    
+            .help-block {
+                font-family: $secondary-font;
+                font-size: 12px;
+                color: #cb2b2b;
+            }
+
+        }
+    }
+}
+
+#changePasswordModal {
+    .hystmodal__window {
+        form {
+            @include flex-column(12px);
+        }
+    }
+}
+
+//
+.hidden {
+    display: none !important;
+}

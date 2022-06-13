@@ -1,0 +1,55 @@
+@mixin flex-row($column-gap: 0, $justify-content: flex-start, $align-items: flex-start) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    column-gap: $column-gap;
+}
+
+@mixin flex-column($row-gap: 0, $justify-content: flex-start, $align-items: normal) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    row-gap: $row-gap;
+}
+
+@mixin text-green() {
+    background: $green;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin text-white() {
+    background: $white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin text-black() {
+    color: $black;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+}
+
+@mixin border-bottom-colorful($height: 4px) {
+    border-bottom: $height solid;
+    border-image-source: $colorful;
+    border-image-slice: 1;
+    box-sizing: border-box;
+}
+
+@mixin border-color($color, $height: 5px) {
+    border: $height solid;
+    border-image-source: $color;
+    border-image-slice: 1;
+    box-sizing: border-box;
+}
+
+@mixin border-left-color($color, $height: 5px) {
+    border-left: $height solid;
+    border-image-source: $color;
+    border-image-slice: 1;
+    box-sizing: border-box;
+}
+

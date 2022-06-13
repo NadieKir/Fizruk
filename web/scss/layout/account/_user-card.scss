@@ -1,0 +1,45 @@
+.user-card-section {
+    @include flex-row(0, space-between);
+
+    .card-qr-wrapper {
+        @include flex-column(40px);
+
+        .user-qr {
+            @include flex-row(0, space-between, center);
+            
+
+            .qr {
+                width: 160px;
+                height: 160px;
+                @include border-color($green);
+            }
+
+            .qr-warning {
+                width: 320px;
+                font-size: 14px;
+                line-height: 18px;
+                text-transform: uppercase;
+            }
+        } 
+    }
+
+    .card-info-wrapper {
+        @include flex-column(40px);
+        width: 46%;
+
+        .card-info {
+            @include flex-column(20px);
+
+            .card-info-desc {
+                @include flex-column(10px);
+            }
+            
+            p {
+                font-family: $secondary-font;
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,190 @@
+h3.section-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    color: $black;
+    text-transform: uppercase;
+
+    margin-bottom: 55px;
+}
+
+h3.service-test-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 129%;
+    text-transform: uppercase;
+    @include text-white();
+
+    margin-bottom: 25px;
+}
+
+h4.marathon-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include text-white();
+
+    margin-bottom: 20px;
+}
+
+h4.countdown-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    @include text-white();
+
+    margin-bottom: 25px;
+}
+
+h4.contacts-info-row-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    text-transform: uppercase;
+    @include text-white();
+
+    margin-bottom: 14px;
+}
+
+h5.club-card-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+//
+
+h1.service-info-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    @include text-white();
+    margin-bottom: 50px;
+}
+
+h2.subservice-full-desc-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $black;
+}
+
+//
+
+h1.club-cards-filter-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    @include text-white();
+    width: 80%;
+    padding: 70px 0;
+    display: block;
+    @include border-bottom-colorful();
+}
+
+h3.filter-name {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    @include text-white();
+}
+
+// h3.enroll-modal-heading {
+//     font-family: 'Druk Text Wide Cyr';
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 22px;
+//     text-transform: uppercase;
+//     @include text-white();
+// }
+
+//
+
+h4.promo-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: $black;
+}
+
+//
+
+h1.about-us-intro-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    @include text-white();
+    text-align: center;
+}
+
+//
+
+h3.manage-profile-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    @include text-white();
+}
+
+h4.appointment-date {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    @include text-black();
+}
+
+//
+
+h5.card-info-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    @include text-black();
+}
+
+h3.cancel-modal-heading {
+    font-family: 'Druk Text Wide Cyr';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    @include text-white();
+}

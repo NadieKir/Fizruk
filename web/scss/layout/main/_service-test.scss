@@ -1,0 +1,66 @@
+.service-test {
+    background: url('/img/service-test-background.jpg');
+    padding: 80px 0;
+    margin-bottom: 95px;
+
+    .container {
+        @include flex-row(0, space-between, center);
+    }
+
+    &-info {
+        width: 40%;
+
+        .service-test-desc {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            @include text-white();
+
+            margin-bottom: 30px;
+        }
+    }
+
+    &-test-wrapper {
+        @include border-color($colorful, 4px);
+        padding: 75px 80px;
+        width: 50%;
+        @include flex-column(30px);
+
+        .question-amount-info {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            @include text-white();
+            margin-bottom: -10px;
+        }
+
+        #question {
+            font-size: 20px;
+            line-height: 25px;
+            text-transform: uppercase;
+            @include text-white();
+        }
+
+        .options {
+            @include flex-column(10px);
+
+            .option {
+                background: $white;
+                padding: 14px 20px;
+
+                font-family: $secondary-font;
+                font-weight: 500;
+                font-size: 14px;
+                @include text-black();
+
+                cursor: pointer;
+            }
+        }
+
+    }
+    
+
+}

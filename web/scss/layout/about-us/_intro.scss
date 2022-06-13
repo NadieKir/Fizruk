@@ -1,0 +1,22 @@
+.intro-section {
+    height: 325px;
+    background: linear-gradient(89.92deg, rgba(0, 0, 0, 0.75) 0.08%, rgba(0, 0, 0, 0.75) 99.94%), url('../img/about-us-background.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+
+    @include flex-row(0, center, center);
+
+    &-wrapper {
+        @include flex-column(30px, center);
+        width: 50%;
+
+        .intro-moto {
+            font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            @include text-white();
+            text-align: center;
+        }
+    }
+}

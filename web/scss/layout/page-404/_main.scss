@@ -1,0 +1,36 @@
+.page-404-header {
+    margin-top: 50px;
+}
+
+.main-404-section {
+    height: 100%;
+    margin-top: 120px;
+
+    .container {
+        @include flex-row(0, space-between, center);
+
+        .info-block {
+            @include flex-column(30px);
+            width: 40%;
+
+            h2 {
+                font-size: 28px;
+                text-transform: uppercase;
+                @include text-white();
+            }
+
+            p {
+                font-family: $secondary-font;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+                @include text-white();
+            }
+
+            a {
+                width: fit-content;
+            }
+        }
+    }
+}

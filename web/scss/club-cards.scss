@@ -1,0 +1,19 @@
+@import 'abstract/fonts';
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+@import 'pages/club-cards';
+
+@import 'layout/club-cards/cards-filter';
+@import 'layout/club-cards/selected-cards';
+@import 'layout/club-cards/sort';
+
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/all-club-cards';
+@import 'components/headings';
+@import 'components/pagination';
+@import 'components/socials';
+@import 'components/footer';
+
+

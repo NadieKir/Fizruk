@@ -1,0 +1,58 @@
+.user-appointments-section.tab-content {
+    @include flex-column(60px);
+
+    .user-appointments-row {
+        @include flex-column(25px);
+
+        .appointments-wrapper {
+            @include flex-row(22px);
+            row-gap: 20px;
+            flex-wrap: wrap;
+
+            .one-timetable {
+                @include border-color($green, 3px);
+                padding: 30px;
+                @include flex-column(22px);
+                background: $black;
+                width: 32%;
+                
+                .time-place-wrapper {
+                    @include flex-row(0, space-between);
+                    .time, .place {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        @include text-white();
+                    }
+                }
+
+                .name-trainer-wrapper {
+                    @include flex-column(8px);
+
+                    .service-name {
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        @include text-green();
+                    }
+
+                    .service-trainer {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        @include text-white();
+                    }
+
+                }
+
+                .button-capacity-wrapper {
+                    @include flex-row(0, space-between,center);
+
+                    .capacity {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        @include text-white();
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,172 @@
+.club-card {
+    width: 545px;
+    height: 310px;
+    display: flex;
+    position: relative;
+
+    &-front-side {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @include flex-row(0, flex-end);
+        width: 100%;
+        // width: 545px;
+        height: 100%;
+
+        .card-desc {
+            @include flex-column(22px, flex-end, end);
+            margin-right: 50px;
+
+            img {
+                margin-bottom: 30px;
+                margin-top: 40px;
+            }
+
+            p {
+                font-size: 16px;
+                text-transform: uppercase;
+                @include text-black();
+                text-align: end;
+            }
+        }
+
+        &.card-1-month {
+            background: url('/img/1.svg') no-repeat $white;
+            background-size: contain;
+        }
+
+        &.card-3-month {
+            background: url('/img/3.svg') no-repeat $white;
+            @include border-color($green, 5px);
+            background-size: contain;
+        }
+
+        &.card-6-month {
+            background: url('/img/6.svg') no-repeat $black;
+            @include border-color($green, 5px);
+            background-size: contain;
+
+            p {
+                color: $white;
+            }
+            
+        }
+
+        &.card-12-month {
+            background: url('/img/12.svg') no-repeat $black;
+            @include border-color($colorful, 5px);
+            background-size: contain;
+
+            p {
+                color: $white;
+            }
+        }
+    }
+
+    &-back-side {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 30px 40px;
+        @include flex-column(0px, space-around);
+        height: stretch;
+
+        .short-name-logo-wrapper {
+            @include flex-row(0, space-between);
+
+            .short-name {
+                font-size: 11px;
+                text-transform: uppercase;
+
+                .card-1-month &, .card-3-month & {
+                    @include text-black();
+                }
+
+                .card-6-month &, .card-12-month & {
+                    color: $white;
+                }
+            }
+        }
+
+        .card-desc-price-wrapper {
+            @include flex-row(0, space-between, center);
+
+            .card-1-month &, .card-3-month & {
+                @include text-black();
+            }
+
+            .card-6-month &, .card-12-month & {
+                @include text-white();
+            }
+
+            .card-desc {
+                width: 65%;
+                @include flex-column(10px);
+
+                font-family: $secondary-font;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+            }
+
+            .card-desc-line {
+                width: 3px;
+                height: 100%;
+                background: $green;
+            }
+
+            .card-price {
+                font-size: 23px;
+                text-transform: uppercase;
+            }
+        }
+        
+        &.card-1-month {
+            background: $white;
+        }
+
+        &.card-3-month {
+            background: $white;
+            @include border-color($green, 5px);
+        }
+
+        &.card-6-month {
+            background: $black;
+            @include border-color($green, 5px);
+            color: $white;
+        }
+
+        &.card-12-month {
+            background: $black;
+            @include border-color($colorful, 5px);
+            color: $white;
+        }
+    }
+
+    .selected-cards-section & {
+        // Анимация поворота карты
+
+        .club-card-front-side,
+        .club-card-back-side{
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            transition: transform .4s linear;
+            right: 0;
+            left: 0;
+        }
+
+        .club-card-front-side{
+            transform: perspective(600px) rotateY(0deg);
+        }
+
+        .club-card-back-side{
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+        &:hover .club-card-front-side{
+            transform: perspective(600px) rotateY(-180deg);
+        }
+        &:hover .club-card-back-side{
+            transform: perspective(600px) rotateY(0deg);
+        }
+    }
+
+
+}

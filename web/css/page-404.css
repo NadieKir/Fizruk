@@ -1,0 +1,625 @@
+@font-face {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Druk Text Wide Cyr"), url("../fonts/Druk-Text-Wide-Cyr-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), url("../fonts/Montserrat-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Open Sans"), url("../fonts/Montserrat-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat"), url("../fonts/Montserrat-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat"), url("../fonts/Montserrat-Bold.ttf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #161816;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Druk Text Wide Cyr";
+  font-weight: 500;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.container {
+  width: 1235px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.green {
+  background: -webkit-gradient(linear, left top, left bottom, from(#40F214), to(#15D028));
+  background: linear-gradient(180deg, #40F214 0%, #15D028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.page-404-header {
+  margin-top: 50px;
+}
+
+.main-404-section {
+  height: 100%;
+  margin-top: 120px;
+}
+
+.main-404-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+}
+
+.main-404-section .container .info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  row-gap: 30px;
+  width: 40%;
+}
+
+.main-404-section .container .info-block h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-404-section .container .info-block p {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-404-section .container .info-block a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header {
+  border-bottom: 4px solid;
+  border-image-source: linear-gradient(90deg, #96FF00 0%, #DEFF00 50.83%, #9600FF 100%);
+  border-image-slice: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  height: 100px;
+  background-color: #161816;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+}
+
+.header .container .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  overflow: hidden;
+}
+
+.header .container .main-nav a {
+  overflow: hidden;
+  padding: -1px;
+  height: 1.3em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.header .container .main-nav a span {
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header .container .main-nav a span::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#40F214), to(#15D028));
+  background: linear-gradient(180deg, #40F214 0%, #15D028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 500;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.header .container .main-nav a:hover span {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.header .container .main-nav a.active span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#40F214), to(#15D028));
+  background: linear-gradient(180deg, #40F214 0%, #15D028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .container .main-nav a.active span:hover {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.header .container .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 18px;
+          column-gap: 18px;
+}
+
+.header .container .account .user-name {
+  background: -webkit-gradient(linear, left top, left bottom, from(#40F214), to(#15D028));
+  background: linear-gradient(180deg, #40F214 0%, #15D028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.header .container .account a {
+  font-size: 0;
+}
+
+.header .container .account form {
+  font-size: 0;
+}
+
+.header .container .account form .logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  padding: 0;
+}
+
+.green-btn {
+  display: inline-block;
+  padding: 18px 38px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3be211), color-stop(#15D028), color-stop(#3be211), to(#15D028));
+  background-image: linear-gradient(to right, #3be211, #15D028, #3be211, #15D028);
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  background-size: 300% 100%;
+}
+
+.green-btn span {
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-btn:hover {
+  background-position: 100% 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.green-modal-btn {
+  display: inline-block;
+  padding: 18px 38px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3be211), color-stop(#15D028), color-stop(#3be211), to(#15D028));
+  background-image: linear-gradient(to right, #3be211, #15D028, #3be211, #15D028);
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  background-size: 300% 100%;
+  color: #F5F5F5;
+  margin-top: 12px;
+}
+
+.green-modal-btn:hover {
+  background-position: 100% 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+a.arrow-btn .arrow-btn-action {
+  font-size: 12px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#40F214), to(#15D028));
+  background: linear-gradient(180deg, #40F214 0%, #15D028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+a.arrow-btn .arrow-btn-action::after {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 65px;
+  right: -50px;
+  top: 2px;
+  background-image: url("../img/arrow.svg");
+  background-size: 90px 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.arrow-btn .arrow-btn-action:hover::after {
+  right: -70px;
+}
+
+span.arrow-btn .arrow-btn-action {
+  font-size: 12px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#40F214), to(#15D028));
+  background: linear-gradient(180deg, #40F214 0%, #15D028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+span.arrow-btn .arrow-btn-action::after {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 65px;
+  right: -50px;
+  top: 2px;
+  background-image: url("../img/arrow.svg");
+  background-size: 90px 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+span.arrow-btn .arrow-btn-action:hover::after {
+  right: -70px;
+}
+
+button.arrow-btn {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  background: transparent;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#40F214), to(#15D028));
+  background: linear-gradient(180deg, #40F214 0%, #15D028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+button.arrow-btn::after {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 65px;
+  right: -50px;
+  top: 0px;
+  background-image: url("../img/arrow.svg");
+  background-size: 90px 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button.arrow-btn:hover::after {
+  right: -70px;
+}
+
+h3.section-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  color: #161816;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+
+h3.service-test-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 129%;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+h4.marathon-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+h4.countdown-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+h4.contacts-info-row-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 14px;
+}
+
+h5.club-card-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1.service-info-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+h2.subservice-full-desc-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #161816;
+}
+
+h1.club-cards-filter-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 80%;
+  padding: 70px 0;
+  display: block;
+  border-bottom: 4px solid;
+  border-image-source: linear-gradient(90deg, #96FF00 0%, #DEFF00 50.83%, #9600FF 100%);
+  border-image-slice: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h3.filter-name {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4.promo-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #161816;
+}
+
+h1.about-us-intro-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+h3.manage-profile-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4.appointment-date {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #161816;
+}
+
+h5.card-info-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #161816;
+}
+
+h3.cancel-modal-heading {
+  font-family: 'Druk Text Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: #F5F5F5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=page-404.css.map */
